@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel=stylesheet href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+  <script>
+    function openPage(pageUrl){
+      window.open(pageUrl);
+     }
+  </script>
+
+  <nav>
+    <a href="#" class="navbar__text">KAS Games</a>
+    <div class="dropdowns">
+      <div class="dropdown">
+        <button class="dropdown-button">
+          <span class="dropdown-span navbar__text" id="active-tab"><a href="./index.html" class="navbar__text">Home</a></span>
+        </button>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-button">
+          <span class="dropdown-span navbar__text">Games</span>
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-menu">
+          <button class="dropdown-button"><a href="./rps/index.html" class="navbar__text">Rock Paper Scissors</a></button>
+          <button class="dropdown-button"><a href="./coin-flip/index.html" class="navbar__text">Coin Flip</a></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="home-container">
+
+    <div class="card" onclick="openPage('./rps/index.html')">
+      <h3>Rock Paper Scissors</h3>
+    </div>
+
+    <div class="card" onclick="openPage('./coin-flip/index.html')">
+      <h3>Coin Flip</h3>
+    </div>
+    
+  </div>
+
+</body>
+</html>

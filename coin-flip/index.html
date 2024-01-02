@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>Coin Flip</title>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="navbar__text">KAS Games</a>
+    <div class="dropdowns">
+      <div class="dropdown">
+        <button class="dropdown-button">
+          <span class="dropdown-span navbar__text"><a href="../index.html" class="navbar__text">Home</a></span>
+        </button>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-button">
+          <span class="dropdown-span navbar__text">Games</span>
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-menu">
+          <button class="dropdown-button"><a href="../rps/index.html" class="navbar__text">Rock Paper Scissors</a></button>
+          <button class="dropdown-button"><a href="./index.html" class="navbar__text" id="active-tab">Coin Flip</a></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-container">
+    <h1>Coin Flip</h1>
+  </div>
+
+  <div class="main-container">
+    <div class="card">
+      <div class="coin" id="coin"> 
+        <img src="./assets/letter-h.png" alt="Heads"/> 
+      </div> 
+      <div>
+        <button class="button" id="click" onClick="flip()">Flip Coin</button>
+      </div>
+      <p>Result: <span id="result"></span></p>
+    </div>
+    <div class="card">
+      <h3>Score</h3>
+      <p>Heads: <span id="headsScore">0</span></p>
+      <p>Tails: <span id="tailsScore">0</span></p>
+      <button class="button" onClick="reset()">Reset</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
