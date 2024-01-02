@@ -38,7 +38,8 @@ p {
 .home-container {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 100vw;
 }
 
 .main-container {
@@ -170,11 +171,6 @@ hr {
 }  */
 
 .coin-button:hover { 
-  /* background-image: linear-gradient( 
-      45deg, 
-      #4e6bff, 
-      #ff6b6b
-  );  */
   transform: scale(1.05); 
 } 
 
@@ -220,7 +216,6 @@ hr {
 } 
 
 .coin-container { 
-  /* background-color: #fff;  */
   padding: 20px; 
   border-radius: 10px; 
   box-shadow: 0 4px 10px
@@ -233,7 +228,16 @@ hr {
   transform: scale(1.02); 
 } 
 
-/* new nav */
+/* nav */
+
+#hamburger {
+  background-color: var(--secondary);
+  border: none;
+}
+
+.bx {
+  color: white;
+}
 
 ul {
   list-style: none;
@@ -243,13 +247,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-/* button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: inherit;
-} */
 
 .btn {
   display: block;
@@ -439,6 +436,14 @@ a {
     padding: 1.2rem;
   }
 
+  .home-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: 80vw;
+  }
+
   .menu {
     display: none;
     position: absolute;
@@ -446,6 +451,7 @@ a {
     left: 0;
     min-height: 100vh;
     width: 100vw;
+    background-color: black;
   }
 
   .menu-bar li:first-child ul:nth-child(1) {
