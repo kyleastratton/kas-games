@@ -4,30 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Coin Flip</title>
+  <script src="../script.js" defer></script>
 </head>
 <body>
 
-  <nav>
-    <a href="#" class="navbar__text">KAS Games</a>
-    <div class="dropdowns">
-      <div class="dropdown">
-        <button class="dropdown-button">
-          <span class="dropdown-span navbar__text"><a href="../index.html" class="navbar__text">Home</a></span>
-        </button>
+  <header id="nav-menu" aria-label="navigation bar">
+    <div class="container">
+      <div class="nav-start">
+        <nav class="menu">
+          <ul class="menu-bar">
+            <li><a class="nav-link" href="../index.html">Home</a></li>
+            <li>
+              <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                Games
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div id="dropdown2" class="dropdown">
+                <ul role="menu">
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="../rps/index.html">Rock Paper Scissors</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="./coin-flip/index.html">Coin Flip</a>
+                  </li>
+              </div>
+            </li>
+            <li><a class="nav-link" href="">About</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="dropdown">
-        <button class="dropdown-button">
-          <span class="dropdown-span navbar__text">Games</span>
-          <i class="bi bi-chevron-down"></i>
+  
+        <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+          <i class="bx bx-menu" aria-hidden="true"></i>
         </button>
-        <div class="dropdown-menu">
-          <button class="dropdown-button"><a href="../rps/index.html" class="navbar__text">Rock Paper Scissors</a></button>
-          <button class="dropdown-button"><a href="./index.html" class="navbar__text" id="active-tab">Coin Flip</a></button>
-        </div>
       </div>
     </div>
-  </nav>
+  </header>
 
   <div class="main-container">
     <h1>Coin Flip</h1>

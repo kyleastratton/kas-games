@@ -57,3 +57,4 @@ function reset() {
     document.querySelector("#headsScore").innerHTML = resetValue;
     document.querySelector("#tailsScore").innerHTML = resetValue;
 }
+
