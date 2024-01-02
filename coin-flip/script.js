@@ -1,3 +1,6 @@
+const hidden = document.getElementById("hidden");
+hidden.style.display = "none";
+
 let heads = 0;
 let tails = 0;
 
@@ -19,6 +22,7 @@ function updateResult(result) {
     if (result === "Tails") {
         addTails();
     }
+    hidden.style.display = "";
 };
 
 function addHeads() {
