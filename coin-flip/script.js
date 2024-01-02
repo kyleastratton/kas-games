@@ -46,8 +46,8 @@ const tossBtn = document.getElementById('click');
 
 function tossresultFunction(result) {  
 const imageUrl = result === "Heads" ? 
-'./assets/letter-h.png' : 
-'./assets/letter-t.png'; 
+'./assets/h-icon.png' : 
+'./assets/t-icon.png'; 
     resultIcon.classList.add('flip'); 
     setTimeout(() => { 
         resultIcon.innerHTML =  

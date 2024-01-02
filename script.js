@@ -63,3 +63,28 @@ document.addEventListener("keydown", (e) => {
 
 // toggle hamburger menu
 hamburgerBtn.addEventListener("click", toggleHamburger);
+
+// dark mode
+
+const root_theme = document.querySelector(':root');
+const root_btn = document.querySelector(".light-mode");
+root_btn.addEventListener('click', () => {
+  const primary = getComputedStyle(document.documentElement).getPropertyValue('--primary');
+  primary !== 'white' ? root_theme.style.setProperty('--primary', 'white') : root_theme.style.setProperty('--primary', '#242424');
+
+  const secondary = getComputedStyle(document.documentElement).getPropertyValue('--secondary');
+  secondary !== 'white' ? root_theme.style.setProperty('--secondary', 'white') : root_theme.style.setProperty('--secondary', '#1a1a1a');
+
+  const font = getComputedStyle(document.documentElement).getPropertyValue('--font');
+  font == 'white' ? root_theme.style.setProperty('--font', 'black') : root_theme.style.setProperty('--font', 'white');
+
+  const button = getComputedStyle(document.documentElement).getPropertyValue('--button');
+  button == '#242424' ? root_theme.style.setProperty('--button', 'white') : root_theme.style.setProperty('--button', '#242424');
+
+  const buttonColor = getComputedStyle(document.documentElement).getPropertyValue('--button');
+  buttonColor == 'white' ? root_theme.style.setProperty('--button-color', 'black') : root_theme.style.setProperty('--button-color', 'white');
+
+  const card = getComputedStyle(document.documentElement).getPropertyValue('--card');
+  card == '#1a1a1a' ? root_theme.style.setProperty('--card', '#459AE4') : root_theme.style.setProperty('--card', '#1a1a1a');
+
+});

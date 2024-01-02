@@ -35,6 +35,13 @@
           </ul>
         </nav>
       </div>
+
+      <div class="nav-end">
+        <div class="right-container">
+          <a class="light-mode">
+            <img src="../light-mode.jpeg" width="30" height="30" />
+          </a>
+        </div>
   
         <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
           <i class="bx bx-menu" aria-hidden="true"></i>
@@ -50,13 +57,14 @@
   <div class="main-container">
     <div class="card">
       <div class="coin" id="coin"> 
-        <img src="./assets/letter-h.png" alt="Heads"/> 
+        <img src="./assets/h-icon.png" alt="Heads"/> 
       </div> 
       <div>
         <button class="button" id="click" onClick="flip()">Flip Coin</button>
       </div>
-      <p id="hidden">Result: <span id="result"></span></p>
+      <h2 id="hidden">Result: <span id="result"></span></h2>
     </div>
+
     <div class="card">
       <h3>Score</h3>
       <p>Heads: <span id="headsScore">0</span></p>
