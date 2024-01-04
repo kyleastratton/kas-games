@@ -16,12 +16,15 @@
   --border: 1px solid var(--light-grey);
   --shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  --primary: #242424;
-  --secondary: #1a1a1a;
+  /* --primary: #242424; */
+  --primary: #1a1a1a;
+  /* --secondary: #1a1a1a; */
+  --secondary: #242424;
   --font: white;
-  --button: #242424;
+  /* --button: #242424; */
+  --button: #1a1a1a;
   --button-color: white;
-  --card: #1a1a1a;
+  --card: #242424;
 }
 
 body {
@@ -228,7 +231,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit;
+  /* color: inherit; */
 }
 
 .btn {
@@ -290,6 +293,7 @@ a {
 
 .menu-bar .nav-link {
   font-size: large;
+  color: var(--font);
   font-weight: 500;
   letter-spacing: -0.6px;
   padding: 0.3rem;
@@ -431,7 +435,7 @@ a {
     left: 0;
     min-height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: var(--primary);
   }
 
   .menu-bar li:first-child ul:nth-child(1) {
