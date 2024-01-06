@@ -134,6 +134,10 @@ h1, h2, h3 {
   font-size: 64px
 }
 
+#home-image {
+  margin-bottom: 2rem;
+}
+
 .flexbox {
   display: flex;
   flex-direction: row;
