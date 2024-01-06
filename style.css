@@ -142,7 +142,7 @@ h1, h2, h3 {
 
 hr {
   border-top: 1px solid #8c8b8b;
-  margin-top: 2rem;
+  margin: 2rem 0rem;
 }
 
 /* coin flip */
@@ -185,10 +185,10 @@ hr {
 }
 
 .coin.flip { 
-    -moz-animation: spinHorizontal 1s infinite linear;
-    -o-animation: spinHorizontal 1s infinite linear;    
-    -webkit-animation: spinHorizontal 1s infinite linear;
-    animation: spinHorizontal 1s infinite linear;
+    -moz-animation: spinHorizontal 1.2s infinite linear;
+    -o-animation: spinHorizontal 1.2s infinite linear;    
+    -webkit-animation: spinHorizontal 1.2s infinite linear;
+    animation: spinHorizontal 1.2s infinite linear;
 } 
 
 .coin img { 
