@@ -179,18 +179,16 @@ hr {
       ease-in-out; 
 } 
 
-@keyframes spin { 
-  0% { 
-      transform: rotateY(0deg); 
-  } 
-  100% { 
-      transform: rotateY(360deg); 
-  } 
-} 
+@keyframes spinHorizontal {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
 
 .coin.flip { 
-  animation: spin 1s 
-      cubic-bezier(0.4, 2.5, 0.6, 0.5); 
+    -moz-animation: spinHorizontal 1s infinite linear;
+    -o-animation: spinHorizontal 1s infinite linear;    
+    -webkit-animation: spinHorizontal 1s infinite linear;
+    animation: spinHorizontal 1s infinite linear;
 } 
 
 .coin img { 
