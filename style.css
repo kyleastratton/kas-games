@@ -319,7 +319,8 @@ a {
   display: flex;
   flex-direction: column;
   min-width: 230px;
-  background-color: var(--white);
+  background-color: var(--primary);
+  color: var(--font);
   border-radius: 10px;
   position: absolute;
   top: 36px;
@@ -346,7 +347,7 @@ a {
 }
 
 .dropdown-btn {
-  color: black;
+  /* color: black; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -357,7 +358,7 @@ a {
 }
 
 .dropdown-link {
-  color: black;
+  color: var(--font);
   display: flex;
   gap: 0.5rem;
   padding: 0.5rem 0;
