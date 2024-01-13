@@ -59,8 +59,12 @@
       <div class="coin" id="coin"> 
         <img src="./assets/h-icon.png" alt="Heads"/> 
       </div> 
+      <div id="multi-div">
+        <h3>Flip Multiple Times <span class="italics">(Optional)</span></h3>
+        <input id="multi" type="number" min="1" max="1000" value="0" />
+      </div>
       <div>
-        <button class="button" id="click" onClick="flip()">Flip Coin</button>
+        <button class="button" id="click" onClick="flipClick()">Flip Coin</button>
       </div>
       <h2 id="hidden">Result: <span id="result"></span></h2>
     </div>

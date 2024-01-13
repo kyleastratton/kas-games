@@ -149,6 +149,20 @@ hr {
   margin: 2rem 0rem;
 }
 
+#multi-div {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+#multi {
+  width: 50%;
+  background-color: var(--primary);
+  color: var(--font);
+  padding: 0.5rem;
+  border: none;
+  margin-top: 0.5rem;
+}
+
 /* coin flip */
 
 .coin-container { 

@@ -4,14 +4,26 @@ hidden.style.display = "none";
 let heads = 0;
 let tails = 0;
 
-function flip() {  
-    x = (Math.floor(Math.random() * 2) == 0);
-    if(x){
-        updateResult("Heads");
-    }else{
-        updateResult("Tails");
+function flipClick() {  
+    const multi = document.getElementById("multi");
+    console.log("multi = ", multi.value);
+    if (multi.value < 1) {
+        flip();
+    } else {
+        for (let i = 0; i < multi.value; i++) {
+            flip();
+        }
     }
 };
+
+function flip() {
+    x = (Math.floor(Math.random() * 2) == 0);
+        if(x){
+            updateResult("Heads");
+        }else{
+            updateResult("Tails");
+        }
+}
 
 function updateResult(result) {
     document.getElementById("result").innerHTML = result;
