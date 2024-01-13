@@ -185,6 +185,7 @@ hr {
       ease-in-out; 
   margin: 0 auto; 
   backface-visibility: hidden; 
+  z-index: -99;
 } 
 
 .coin-button:hover { 
@@ -453,6 +454,7 @@ a {
     min-height: 100vh;
     width: 100vw;
     background-color: var(--primary);
+    z-index: 1;
   }
 
   .menu-bar li:first-child ul:nth-child(1) {
