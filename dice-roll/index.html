@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Dice Roll</title>
+  <script src="../script.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <header id="nav-menu" aria-label="navigation bar">
+    <div class="container">
+      <div class="nav-start">
+        <nav class="menu">
+          <ul class="menu-bar">
+            <li><a class="nav-link" href="../index.html">Home</a></li>
+            <li>
+              <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                Games
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div id="dropdown2" class="dropdown">
+                <ul role="menu">
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="../rps/index.html">Rock Paper Scissors</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="./coin-flip/index.html">Coin Flip</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="./dice-roll/index.html">Dice Roll</a>
+                  </li>
+              </div>
+            </li>
+            <li><a class="nav-link" href="">About</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-end">
+        <div class="right-container">
+          <a class="light-mode">
+            <img src="../assets/light-mode.jpeg" width="30" height="30" />
+          </a>
+        </div>
+  
+        <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <h1>Dice Roll</h1>
+  </div>
+
+  <div class="main-container">
+    <div class="game">
+      <div class="dr-container">
+        <div id='dice1' class="dice dice-one">
+          <div id="dice-one-side-one" class='side one'>
+            <div class="dot one-1"></div>
+          </div>
+          <div id="dice-one-side-two" class='side two'>
+            <div class="dot two-1"></div>
+            <div class="dot two-2"></div>
+          </div>
+          <div id="dice-one-side-three" class='side three'>
+            <div class="dot three-1"></div>
+            <div class="dot three-2"></div>
+            <div class="dot three-3"></div>
+          </div>
+          <div id="dice-one-side-four" class='side four'>
+            <div class="dot four-1"></div>
+            <div class="dot four-2"></div>
+            <div class="dot four-3"></div>
+            <div class="dot four-4"></div>
+          </div>
+          <div id="dice-one-side-five" class='side five'>
+            <div class="dot five-1"></div>
+            <div class="dot five-2"></div>
+            <div class="dot five-3"></div>
+            <div class="dot five-4"></div>
+            <div class="dot five-5"></div>
+          </div>
+          <div id="dice-one-side-six" class='side six'>
+            <div class="dot six-1"></div>
+            <div class="dot six-2"></div>
+            <div class="dot six-3"></div>
+            <div class="dot six-4"></div>
+            <div class="dot six-5"></div>
+            <div class="dot six-6"></div>
+          </div>
+        </div>
+     </div>
+      <div class="dr-container">
+        <div id='dice2' class="dice dice-two">
+          <div id="dice-two-side-one" class='side one'>
+            <div class="dot one-1"></div>
+          </div>
+          <div id="dice-two-side-two" class='side two'>
+            <div class="dot two-1"></div>
+            <div class="dot two-2"></div>
+          </div>
+          <div id="dice-two-side-three" class='side three'>
+            <div class="dot three-1"></div>
+            <div class="dot three-2"></div>
+            <div class="dot three-3"></div>
+          </div>
+          <div id="dice-two-side-four" class='side four'>
+            <div class="dot four-1"></div>
+            <div class="dot four-2"></div>
+            <div class="dot four-3"></div>
+            <div class="dot four-4"></div>
+          </div>
+          <div id="dice-two-side-five" class='side five'>
+            <div class="dot five-1"></div>
+            <div class="dot five-2"></div>
+            <div class="dot five-3"></div>
+            <div class="dot five-4"></div>
+            <div class="dot five-5"></div>
+          </div>
+          <div id="dice-two-side-six" class='side six'>
+            <div class="dot six-1"></div>
+            <div class="dot six-2"></div>
+            <div class="dot six-3"></div>
+            <div class="dot six-4"></div>
+            <div class="dot six-5"></div>
+            <div class="dot six-6"></div>
+          </div>
+        </div> 
+     </div>
+     <button class="button" id="roll" onClick="rollDice()">Roll dice!</button>
+    </div> 
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
